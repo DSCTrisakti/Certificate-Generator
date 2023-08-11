@@ -38,7 +38,7 @@ Other Resources:
 - Source of Resources
 
 ### Contribution
-Read this [Typing/Coding Guidelines](https://github.com/AzharRizky/Certificate-Automation/wiki/Coding-Guidelines) if you want contribute to the project.
+Read this [Typing/Coding Guidelines](https://github.com/AzharRizky/Certificate-Automation/wiki/Coding-Guidelines) if you want contribute to this project.
 
 ### :man_technologist: Developed by Google Developer Student Club Trisakti University
 - [Azhar Rizki Zulma](https://zulma.id)

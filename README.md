@@ -11,9 +11,11 @@ Create your event certificate easy
 - Whatsapp Notification (Soon)
 
 ### 📚 How To Use
-Limited use for GDSC Lead/Core Team/Team only
+Limited use for GDSC Lead/Core Team/Team only.
 
-Access this [GDSC Certificate Template](https://s.zulma.id/Certificate-Template) to custom design your certificate
+Access this [GDSC Certificate Template](https://s.zulma.id/Certificate-Template) to custom design your certificate.
+
+Use this link [Certificate Automation](https://gdsc.zulma.id) to generate your certificate.
 
 ### 🖼️ Application Preview
 Feature 1 | Feature 2 | Feature 3 | 

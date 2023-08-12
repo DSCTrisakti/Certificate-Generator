@@ -6,7 +6,8 @@ Create your event certificate easy
 ### 📱 Feature 
 - Generate Certificate
 - Just Input Name of Participant
-- Download Certificate
+- Download Certificate as Image (Just jpg, for png Soon)
+- Download Certificate as PDF (Soon)
 - Upload Certificate to Google Drive (Soon)
 - Whatsapp Notification (Soon)
 

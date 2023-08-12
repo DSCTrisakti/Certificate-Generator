@@ -5,13 +5,15 @@ Create your event certificate easy
 
 ### 📱 Feature 
 - Generate Certificate
-- Just Input Event
 - Just Input Name of Participant
-- Saved Certificate on Google Drive
+- Download Certificate
+- Upload Certificate to Google Drive (Soon)
 - Whatsapp Notification (Soon)
 
 ### 📚 How To Use
 Limited use for GDSC Lead/Core Team/Team only
+
+Access this [GDSC Certificate Template](https://s.zulma.id/Certificate-Template) to custom design your certificate
 
 ### 🖼️ Application Preview
 Feature 1 | Feature 2 | Feature 3 | 

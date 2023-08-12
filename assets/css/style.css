@@ -1,0 +1,27 @@
+/******************************************************************************/
+/*  CASCADING STYLE SHEET ASSETS                                              */
+/*----------------------------------------------------------------------------*/
+/*  Copyright (C) 2020 MINEVERSAL                                             */
+/*  Licensed material of MINEVERSAL                                           */
+/*----------------------------------------------------------------------------*/
+/*  Object              : CSSA (CASCADING STYLE SHEET ASSETS)                 */
+/*  Outline             : CSSA (CASCADING STYLE SHEET ASSETS)                 */
+/*  File ID             : CertGen-CSSA-1									  */
+/*----------------------------------------------------------------------------*/
+/*  Author              : Joe                                                 */
+/*  Revision Author     : -                                                   */
+/*  Created Time        : 2023/08/12 09:00 (UTC+07:00)                        */
+/*  Modification Time   : 2023/08/12 13:00 (UTC+07:00)                        */
+/*  Version             : 1 (Number of Version)                               */
+/*  Revision            : 0 (Number of Revision)                              */
+/******************************************************************************/
+
+/******************************************************************************/
+/*        FONT SETTING														  */
+/******************************************************************************/
+@font-face {
+	font-family: 'consolas'; /* Font name */
+	src: url('/assets/font/Consolas/CONSOLAB.TTF'); /* Directory of font file */
+}
+
+/******** END OF FILE *********************************************************/

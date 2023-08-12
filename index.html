@@ -1,0 +1,291 @@
+<!------------------------------------------------------------------------------------------------->
+<!-- CERTIFICATE GENERATOR GOOGLE DEVELOPER STUDENT CLUB TRISAKTI UNIVERSITY					 -->
+<!------------------------------------------------------------------------------------------------->
+<!-- Copyright (C) 2020 MINEVERSAL                                                               -->
+<!-- Licensed material of MINEVERSAL                                                             -->
+<!------------------------------------------------------------------------------------------------->
+<!-- Object             : CGGDSCTU																 -->
+<!-- Outline            : Certificate Generator for GDSC Trisakti University					 -->
+<!-- File ID            : CertGen-CGGDSCTU-1													 -->
+<!------------------------------------------------------------------------------------------------->
+<!-- Author             : Joe                                                                    -->
+<!-- Revision Author	: -                                                                      -->
+<!-- Created Time       : 2023/08/12 09:00 (UTC+07:00)                                           -->
+<!-- Modification Time  : 2023/08/12 13:00 (UTC+07:00)                                           -->
+<!-- Version            : 1 (Number of Version)                                                  -->
+<!-- Revision           : 0 (Number of Revision)                                                 -->
+<!------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html b:css="false" b:defaultwidgetversion="2" b:layoutsVersion="3" b:responsive="true" lang='id' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<!------------------------------------------------------------------------------------------------->
+<!-- HEAD TAG                                                                                    -->
+<!------------------------------------------------------------------------------------------------->
+    <head>
+        <!-- REQUIRED META TAGS -->
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="title" content="GDSC Trisakti Event Certificate Generator"/>
+        <meta name="description" content="Certificate Generator for Attendance"/>
+        <meta name="author" content="Azhar Rizki Zulma | アズハル(春)・リズキ・ズルマ | Haru | Joe Hawk"/>
+        <meta name="keywords" content="gdsc, trisakti, university, universitas, google developer">
+        <meta name="google-site-verification" content=""/>
+        <meta property="og:title" content="GDSC Trisakti Event Certificate Generator"/>
+        <meta property="og:description"content="Thank you for attending our event!"/>
+        <meta property="og:image" content="https://id.zulma.id/assets/images/AZ.png"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content=""/>
+
+        <!-- GLOBAL STYLESHEET ASSETS -->
+
+        <!-- LOCAL STYLESHEET ASSETS -->
+        <link href="/assets/css/style.css" rel="stylesheet">
+
+        <!-- TITLE AND ICON -->
+        <link rel="shortcut icon" href="https://id.zulma.id/assets/images/favicon.ico"/>
+        <link rel="apple-touch-icon" href="https://id.zulma.id/assets/images/AZ.png">
+        <title>Zulma's Landing Page</title>
+        
+        <!-- GOOGLE ANALYTICS -->
+        <!-- END GOOGLE ANALYTICS -->
+    </head>
+<!------------------------------------------------------------------------------------------------->
+<!-- BODY TAG                                                                                    -->
+<!------------------------------------------------------------------------------------------------->
+	<body>
+		<div class="container">
+			<!-- TITLE -->
+			<h1>Certificate Generator by GDSC Trisakti</h1>
+
+			<!-- LABEL & INPUT BOX -->
+			<label>Name:<input id="name" type='text'></label>
+
+			<!-- DOWNLOAD BUTTON -->
+			<a href="#" id="download-btn">Download</a>
+
+			<!-- CREATE SPACE BETWEEN INPUT & CERTIFICATE PREVIEW -->
+			<br>
+
+			<!-- CERTIFICATE PREVIEW -->
+			<canvas id="canvas" width="960px" height="540px"></canvas>
+		</div>
+
+		<!-- GLOBAL SCRIPT ASSETS -->
+
+		<!-- LOCAL SCRIPT ASSETS -->
+		<script src="/assets/js/script.js"></script>
+
+		<!-- ANTI VIEW PAGE SECURITY -->
+        <div class='section' id='keamanan'>
+            <div class='widget HTML' data-version='2' id='HTML2'>
+                <div class='widget-content'>
+                    <script>
+                        //<![CDATA[
+                        /* anti view page source */
+                        shortcut.add("Ctrl+U", function () {
+                            top.location.href = "https://zulma.id"
+                        });
+                        shortcut.add("f12", function () {
+                            top.location.href = "https://zulma.id"
+                        });
+                        /* anti copy paste 
+                        shortcut.add("Ctrl+C",function(){top.location.href="https://https://zulma.id"});  */
+                        /* anti klik kanan */
+                        document.addEventListener("contextmenu", function (e) {
+                            e.preventDefault();
+                        }, false);
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <script type='text/javascript'>
+            // Disable View Source 
+            (shortcut = {
+            all_shortcuts: {},
+            add: function (a, b, c) {
+                var d = {
+                type: "keydown",
+                propagate: !1,
+                disable_in_input: !1,
+                target: document,
+                keycode: !1,
+                };
+                if (c) for (var e in d) "undefined" == typeof c[e] && (c[e] = d[e]);
+                else c = d;
+                (d = c.target),
+                "string" == typeof c.target && (d = document.getElementById(c.target)),
+                (a = a.toLowerCase()),
+                (e = function (d) {
+                    d = d || window.event;
+                    if (c.disable_in_input) {
+                    var e;
+                    d.target ? (e = d.target) : d.srcElement && (e = d.srcElement),
+                        3 == e.nodeType && (e = e.parentNode);
+                    if ("INPUT" == e.tagName || "TEXTAREA" == e.tagName) return;
+                    }
+                    d.keyCode ? (code = d.keyCode) : d.which && (code = d.which),
+                    (e = String.fromCharCode(code).toLowerCase()),
+                    188 == code && (e = ","),
+                    190 == code && (e = ".");
+                    var f = a.split("+"),
+                    g = 0,
+                    h = {
+                        "`": "~",
+                        1: "!",
+                        2: "@",
+                        3: "#",
+                        4: "$",
+                        5: "%",
+                        6: "^",
+                        7: "&",
+                        8: "*",
+                        9: "(",
+                        0: ")",
+                        "-": "_",
+                        "=": "+",
+                        ";": ":",
+                        "'": '"',
+                        ",": "<",
+                        ".": ">",
+                        "/": "?",
+                        "\\": "|",
+                    },
+                    i = {
+                        esc: 27,
+                        escape: 27,
+                        tab: 9,
+                        space: 32,
+                        return: 13,
+                        enter: 13,
+                        backspace: 8,
+                        scrolllock: 145,
+                        scroll_lock: 145,
+                        scroll: 145,
+                        capslock: 20,
+                        caps_lock: 20,
+                        caps: 20,
+                        numlock: 144,
+                        num_lock: 144,
+                        num: 144,
+                        pause: 19,
+                        break: 19,
+                        insert: 45,
+                        home: 36,
+                        delete: 46,
+                        end: 35,
+                        pageup: 33,
+                        page_up: 33,
+                        pu: 33,
+                        pagedown: 34,
+                        page_down: 34,
+                        pd: 34,
+                        left: 37,
+                        up: 38,
+                        right: 39,
+                        down: 40,
+                        f1: 112,
+                        f2: 113,
+                        f3: 114,
+                        f4: 115,
+                        f5: 116,
+                        f6: 117,
+                        f7: 118,
+                        f8: 119,
+                        f9: 120,
+                        f10: 121,
+                        f11: 122,
+                        f12: 123,
+                    },
+                    j = !1,
+                    l = !1,
+                    m = !1,
+                    n = !1,
+                    o = !1,
+                    p = !1,
+                    q = !1,
+                    r = !1;
+                    d.ctrlKey && (n = !0),
+                    d.shiftKey && (l = !0),
+                    d.altKey && (p = !0),
+                    d.metaKey && (r = !0);
+                    for (var s = 0; (k = f[s]), s < f.length; s++)
+                    "ctrl" == k || "control" == k
+                        ? (g++, (m = !0))
+                        : "shift" == k
+                        ? (g++, (j = !0))
+                        : "alt" == k
+                        ? (g++, (o = !0))
+                        : "meta" == k
+                        ? (g++, (q = !0))
+                        : 1 < k.length
+                        ? i[k] == code && g++
+                        : c.keycode
+                        ? c.keycode == code && g++
+                        : e == k
+                        ? g++
+                        : h[e] && d.shiftKey && ((e = h[e]), e == k && g++);
+                    if (
+                    g == f.length &&
+                    n == m &&
+                    l == j &&
+                    p == o &&
+                    r == q &&
+                    (b(d), !c.propagate)
+                    )
+                    return (
+                        (d.cancelBubble = !0),
+                        (d.returnValue = !1),
+                        d.stopPropagation && (d.stopPropagation(), d.preventDefault()),
+                        !1
+                    );
+                }),
+                (this.all_shortcuts[a] = { callback: e, target: d, event: c.type }),
+                d.addEventListener
+                    ? d.addEventListener(c.type, e, !1)
+                    : d.attachEvent
+                    ? d.attachEvent("on" + c.type, e)
+                    : (d["on" + c.type] = e);
+            },
+            remove: function (a) {
+                var a = a.toLowerCase(),
+                b = this.all_shortcuts[a];
+                delete this.all_shortcuts[a];
+                if (b) {
+                var a = b.event,
+                    c = b.target,
+                    b = b.callback;
+                c.detachEvent
+                    ? c.detachEvent("on" + a, b)
+                    : c.removeEventListener
+                    ? c.removeEventListener(a, b, !1)
+                    : (c["on" + a] = !1);
+                }
+            },
+            }),
+            shortcut.add("Ctrl+U", function () {
+                top.location.href = "https://zulma.id";
+            });
+
+            // Disable Right Click
+            document.addEventListener("contextmenu", function(e){
+                e.preventDefault();
+            }, false);
+
+            /* Anti View Source */
+            shortcut.add("Ctrl+U", function () {
+                top.location.href = "https://zulma.id"
+            });
+            shortcut.add("f12", function () {
+                top.location.href = "https://zulma.id"
+            });
+            /* Disable Copy Paste
+            shortcut.add("Ctrl+C",function(){top.location.href="https://https://id.zulma.id"});  */    
+        </script>
+        <!-- END ANTI VIEW PAGE SECURITY -->
+	</body>
+</html>
+
+<!------------------------------------------------------------------------------------------------->
+<!-- END OF FILE                                                                                 -->
+<!------------------------------------------------------------------------------------------------->

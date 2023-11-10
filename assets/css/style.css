@@ -6,7 +6,7 @@
 /*----------------------------------------------------------------------------*/
 /*  Object              : CSSA (CASCADING STYLE SHEET ASSETS)                 */
 /*  Outline             : CSSA (CASCADING STYLE SHEET ASSETS)                 */
-/*  File ID             : CertGen-CSSA-1									  */
+/*  File ID             : CertGen-CSSA-1				      */
 /*----------------------------------------------------------------------------*/
 /*  Author              : Joe                                                 */
 /*  Revision Author     : -                                                   */
@@ -17,10 +17,10 @@
 /******************************************************************************/
 
 /******************************************************************************/
-/*        FONT SETTING														  */
+/*        FONT SETTING							      */
 /******************************************************************************/
 @font-face {
-	font-family: 'consolas'; /* Font name */
+	font-family: 'consolas'; 			/* Font name */
 	src: url('/assets/font/Consolas/CONSOLAB.TTF'); /* Directory of font file */
 }
 
